@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<h3>Выберите файл для сортировки</h3>
+@using (Html.BeginForm("Sorter", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="upload" /><br>
+    <input type="submit" value="Загрузить" />
+}
